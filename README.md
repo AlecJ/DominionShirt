@@ -1,24 +1,36 @@
-My portfolio
+The Dominion Shirt
 
+## Heroku
 
-## To Do
-* vue-router
-* embed html from other document into div
-* extended page for de_bug
-* projects - text indicating click to see more
-* slide out screen for 'see more'
-* projects page (grid view)
-* youtube - video embed
+Create a new project:
 
-## Header
-should resemble tabs somehow - page is pulled from right side of screen
-maybe go left and right
+Create a new App
+`heroku create`
 
-## Project
-clicking on a project pulls a tab from right side of screen with info
+Log in to container registry
+`heroku container:login`
 
-## Projects page
-list of thumbnails with 1 sentence description
-click on one
-left slide in, vertical list of all projects
-right slide in, page for project
+Build and upload the image
+`docker build -t registry.heroku.com/<app_id>/web -f ./deploy/docker/Dockerfile.prod .`
+
+Push the image
+`docker push registry.heroku.com/<app_id>/web`
+
+Release the image
+`heroku container:release --app <app_id> web`
+
+fast-sands-60878
+`docker build -t registry.heroku.com/fast-sands-60878/web -f ./deploy/docker/Dockerfile.prod .`
+`docker push registry.heroku.com/fast-sands-60878/web`
+`heroku container:release --app fast-sands-60878 web`
+
+## Github
+
+Bundle project
+`cd ui && npm run build`
+
+Copy the contents of /ui/dist to the root of the project
+
+Push changes to github
+
+Configure github pages in the repository's settings page
