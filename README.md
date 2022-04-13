@@ -1,6 +1,13 @@
 The Dominion Shirt
 
-## Heroku
+## Todo
+
+flip button below shirt, can hover to zoom in
+store icon
+
+## Deploy
+
+### Heroku
 
 Create a new project:
 
@@ -24,7 +31,7 @@ fast-sands-60878
 `docker push registry.heroku.com/fast-sands-60878/web`
 `heroku container:release --app fast-sands-60878 web`
 
-## Github
+### Github
 
 Bundle project
 `cd ui && npm run build`
