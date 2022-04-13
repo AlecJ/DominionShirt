@@ -41,3 +41,11 @@ Copy the contents of /ui/dist to the root of the project
 Push changes to github
 
 Configure github pages in the repository's settings page
+
+## Troubleshooting
+
+### Favicon not updating
+
+The favicon is automatically set as the default VUE favicon, and needs to be replaced manually everytime you run `npm run build`. After compiling, edit index.html with the link to your PNG file (or similar).
+
+https://stackoverflow.com/questions/53216047/change-favicon-vuejs
