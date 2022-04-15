@@ -38,6 +38,10 @@ Bundle project
 
 Copy the contents of /ui/dist to the root of the project
 
+If you want to update the favicon, manually update index.html
+
+Copy index.html and rename the copy to `404.html`
+
 Push changes to github
 
 Configure github pages in the repository's settings page
