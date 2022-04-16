@@ -38,7 +38,7 @@ Bundle project
 
 Copy the contents of /ui/dist to the root of the project
 
-If you want to update the favicon, manually update index.html
+If you want to update the favicon, copy the logo to `./img/` and manually update index.html
 
 Copy index.html and rename the copy to `404.html`
 
